@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+h1{
+    background-color: navajowhite;
+    color:black;
+    padding: 10px;
+}
+.container_in{
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.container_in button{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    color: white;
+
+}
+.container_in h3{
+    color:palevioletred;
+}
+.container_in p{
+    color: deepskyblue;
+}
+.button_1{
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: navajowhite;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+}
+.cover{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+.add_container_form{
+    background-color: burlywood;
+    width:400px;
+    padding: 20px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    z-index: 2;
+    display: none;
+
+}
+.add_container_form input,textarea{
+    width: 370px;
+    padding: 5px;
+    margin: 5px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 3px solid black;
+}
+.add_container_form input,textarea:focus{
+    outline: none;
+}
+h4{
+    text-align: center;
+}
+.add_container_form .button_add,.button_cancel{
+    background-color: rebeccapurple;
+    border: none;
+    padding: 5px;
+}
