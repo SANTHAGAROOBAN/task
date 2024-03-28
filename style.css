@@ -1,0 +1,66 @@
+body{
+    background-color:black ;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.minutes,.hour,.seconds{
+    display: flex;
+    gap: 20px;
+
+}
+
+.digit>#top{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+}
+.digit>#left_top{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: rotate(90deg) translateX(15px) translateY(14px)
+
+}
+.digit>#right_top{
+    background-color:white;
+    width: 30px;
+    height: 5px;
+    transform: rotate(90deg) translateX(10px) translateY(-14px)
+
+}
+.digit>#middle{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: translateY(24px);
+}  
+.digit>#left_down{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: rotate(90deg) translateX(38px) translateY(14px)
+}
+.digit>#right_down{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: rotate(90deg) translateX(33px) translateY(-14px);
+}
+.digit>#bottom{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: translateY(47px);
+}
+
+span{
+    color: white;
+    font-size: 75px;
+    position: relative;
+    top: -10px;
+}
+
