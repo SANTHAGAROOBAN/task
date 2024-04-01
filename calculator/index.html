@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+        <div class="calculator">
+            <div class="input_field"><input type="text" class="input" placeholder="0"></div>
+        </div>
+    <div class="buttons">
+        <div class="button_line_first button_line">
+            <button onclick="cle()"  class="gray">C</button>
+            <button onclick="cr()" class="gray"><--</button>
+            <button onclick="equal()" class="gray">=</button>
+            <button onclick="pieFunction()" class="yellow">&pi;</button>
+            <button onclick="calculate('%')"  class="pink">%</button>
+        </div>
+        <div class="button_line_second button_line">
+            <button onclick="calculate('7')" class="black">7</button>
+            <button onclick="calculate('8')" class="black">8</button>
+            <button onclick="calculate('9')" class="black">9</button>
+            <button onclick="power()" class="yellow">X^</button>
+            <button onclick="calculate('/')" class="pink">/</button>
+        </div>
+        <div class="button_line_third button_line">
+            <button onclick="calculate('4')" class="black">4</button>
+            <button onclick="calculate('5')" class="black">5</button>
+            <button onclick="calculate('6')" class="black">6</button>
+            <button onclick="ln()" class="yellow">ln</button>
+            <button onclick="calculate('*')" class="pink">*</button>
+        </div>
+        <div class="button_line_fourth button_line">
+            <button onclick="calculate('1')" class="black">1</button>
+            <button onclick="calculate('2')" class="black">2</button>
+            <button onclick="calculate('3')" class="black">3</button>
+            <button onclick="root()" class="yellow">√</button>
+            <button onclick="calculate('-')" class="pink">-</button>
+        </div>
+        <div class="button_line_fifth button_line">
+            <button onclick="plusorminus()" class="pink">±</button>
+            <button onclick="calculate('0')" class="black">0</button>
+            <button onclick="calculate('.')" class="pink">.</button>
+            <button onclick="multiples()" class="yellow">x2</button>
+            <button onclick="calculate('+')" class="pink">+</button>
+        </div>
+        <div class="button_line_final button_line">
+            <button onclick="calculate('(')" class="pink">(</button>
+            <button onclick="calculate(')')" class="pink">)</button>
+            <button onclick="cos()" class="pink">cos</button>
+            <button onclick="sin()" class="pink">sin</button>
+            <button onclick="tan()" class="pink">tan</button>
+        </div>
+    </div>
+        
+
+</div>
+    
+</body>
+</html>
