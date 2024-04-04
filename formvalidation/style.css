@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:gray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formvalidation{
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formcontainer input{
+    padding: 10px;
+    width: 300px;
+}
+button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+button:hover{
+    cursor:pointer;
+}
+.success input{
+    border: solid 2px green;
+
+}
+.error input{
+    border: solid 2px red;
+}
+.content{
+    margin-top: 10px;
+    color: red;
+}
+
