@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+input{
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    text-align: center;
+    outline: none;
+    border:none;
+    /* background-color: aquamarine; */
+}
+
+.first_input,.fourth_input,.seven_input,.second_input,.fifth_input,.eight_input{
+    border-right:solid black 5px;
+}
+
+.first_input,.second_input,.third_input,.fourth_input,.fifth_input,.six_input{
+    border-bottom: solid black 5px;
+}
+
+.playerchoose{
+    display: flex;
+    gap: 3px;
+
+}
+.X,.O{
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(31, 255, 255);
+    margin-bottom: 10px;
+    border: none;
+}
+.Xdesign{
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+.Odesign{
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+.span_one{
+    width: 300px;
+    height: 4px;
+    background-color: gray;
+    transform: translateY(-270px);
+    transition: 3s;
+    display: none;
+}
+.span_two{
+    width: 300px;
+    height: 4px;
+    background-color: gray;
+    transform: translateY(-165px);
+    display: none;
+    transition: 1s;
+}
+.span_three{
+    width: 300px;
+    height: 4px;
+    background-color:gray ;
+    transform: translateY(-60px);
+    display: none;
+    transition: 1s;
+}
+.span_four{
+    width: 4px;
+    height: 300px;
+    background-color: gray;
+    transform: translate(-120px,-310px);
+    transition: 1s;
+    display: none;
+}
+.span_five{
+    width: 4px;
+    height: 300px;
+    background-color: gray;
+    transform: translateY(-310px);
+    transition: 1s;
+    display: none;
+}
+.span_six{
+    width:4px;
+    height: 300px;
+    background-color: gray;
+    transform: translate(120px,-310px);
+    transition: 1s;
+    display: none;
+}
+.span_seven{
+    position: absolute;
+    top: 130px;
+    width: 4px;
+    height: 300px;
+    background-color: gray;
+    transform: skew(-44deg);
+    display: none;
+}
+.span_eight{
+    position: absolute;
+    top: 130px;
+    width: 4px;
+    height: 300px;
+    background-color: gray;
+    transform: skew(44deg);
+    display: none;
+
+}
+.winner_X{
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    width:200px;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+.winner_X P,.winner_Y p,.match_draw p{
+    font-size: 20px;
+    color: white;
+}
+.winner_X button,.winner_Y button,.match_draw button{
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+
+}
+.winner_Y{
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    width:200px;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+
+}
+.match_draw{
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    width:200px;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}

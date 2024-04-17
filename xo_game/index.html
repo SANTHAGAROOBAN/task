@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_O</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>X_O-game</h1>
+    <div class="playerchoose">
+        <button class="X" id="X" onclick="directionchangeX(this)">X</button>
+        <button class="O" id="O" onclick="directionchangeO(this)">O</button>
+    </div>
+    <div>
+        <input type="text" id="one" onfocus="myfunction(this)" class="first_input one" maxlength="1">
+        <input type="text" id="two" onfocus="myfunction(this)" class="second_input two" maxlength="1">
+        <input type="text" id="three" onfocus="myfunction(this)" class="third_input three" maxlength="1">
+    </div>
+    <div>
+        <input type="text" id="four" onfocus="myfunction(this)" class="fourth_input four" maxlength="1">
+        <input type="text" id="five" onfocus="myfunction(this)" class="fifth_input five" maxlength="1">
+        <input type="text" id="six" onfocus="myfunction(this)" class="six_input six" maxlength="1">
+    </div> 
+    <div>
+        <input type="text" id="seven" onfocus="myfunction(this)" class="seven_input seven" maxlength="1">
+        <input type="text" id="eight" onfocus="myfunction(this)" class="eight_input eight" maxlength="1">
+        <input type="text" id="nine" onfocus="myfunction(this)" class="nine_input nine" maxlength="1">
+    </div> 
+    <span class="span_one"></span>
+    <span class="span_two"></span>
+    <span class="span_three"></span>
+    <span class="span_four"></span>
+    <span class="span_five"></span>
+    <span class="span_six"></span>
+    <span class="span_seven"></span>
+    <span class="span_eight"></span>
+    <div class="winner_X"><p>X is the winner</p>
+        <button class="btn" onclick="replay()">replay</button>
+    </div>
+    <div class="winner_Y"><p>O is the winner</p>
+    <button class="btn" onclick="replay()">replay</button></div>
+    <div class="match_draw"><p>X-O matchdraw</p>
+    <button class="btn" onclick="replay()">replay</button></div>
+    
+</body>
+</html>
