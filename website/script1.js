@@ -1,34 +1,34 @@
 var imgback=document.querySelector(".img0");
 var info1=document.querySelector(".info_h1");
-var infopara=document.querySelector(".info_para")
-var infos=document.querySelector(".start-consulting")
+var infopara=document.querySelector(".info_para");
+var infos=document.querySelector(".start-consulting");
 var count=0;
 var maxcount=2;
-var clist=document.querySelector(".info_h1")
+// var clist=document.querySelector(".info_h1")
 
 function leftpre(){
     count--;
-
     if(count<="-1"){
         count=maxcount;
     }
     imgback.src=`./source/images/${count}.jpg`;
+    console.log("count"+count);
     
     if(count--){
-        info1.classList.remove("info_h1")  
-        setTimeout(info1.classList.add("info_h1sample"),1000)
-        infopara.classList.remove("info_para")
-        setTimeout(infopara.classList.add("info_parasample"),1000)
-        infos.classList.remove("start-consulting")
-        setTimeout(infos.classList.add("start-consultingsample"),1000)
+        info1.classList.remove("info_h1", "info_h1sample")  
+        info1.classList.add("info_h1sample2")
+        infopara.classList.remove("info_para", "info_parasample")
+        infopara.classList.add("info_parasample2")
+        infos.classList.remove("start-consulting", "start-consultingsample")
+        infos.classList.add("start-consultingsample2")
     } 
     else{
         info1.classList.add("info_h1")  
-        setTimeout(info1.classList.remove("info_h1sample"),1000)
+        info1.classList.remove("info_h1sample", "info_h1sample2")
         infopara.classList.add("info_para")  
-        setTimeout(infopara.classList.remove("info_parasample"),1000)
+        infopara.classList.remove("info_parasample", "info_parasample2")
         infos.classList.add("start-consulting")
-        setTimeout(infos.classList.remove("start-consultingsample"))
+        infos.classList.remove("start-consultingsample", "start-consultingsample2")
     }
     
     
@@ -43,29 +43,32 @@ function rightnext(){
         count=0
     }
     imgback.src=`./source/images/${count}.jpg`;
+    console.log("count++"+count);
     
     
     if(count++){
-        info1.classList.remove("info_h1")  
-       setTimeout(info1.classList.add("info_h1sample"),1000)
-       infopara.classList.remove("info_para")
-       setTimeout(infopara.classList.add("info_parasample"),1000)
-       infos.classList.remove("start-consulting")
-        setTimeout(infos.classList.add("start-consultingsample"),1000)
+        info1.classList.remove("info_h1", "info_h1sample2")  
+       info1.classList.add("info_h1sample")
+       infopara.classList.remove("info_para", "info_parasample2")
+       infopara.classList.add("info_parasample")
+       infos.classList.remove("start-consulting","start-consultingsample2")
+        infos.classList.add("start-consultingsample")
     } 
     else{
         info1.classList.add("info_h1")  
-        setTimeout(info1.classList.remove("info_h1sample"),1000)
+       info1.classList.remove("info_h1sample", "info_h1sample2")
         infopara.classList.add("info_para")  
-        setTimeout(infopara.classList.remove("info_parasample"),1000)
+        infopara.classList.remove("info_parasample", "info_parasample2")
         infos.classList.add("start-consulting")
-        setTimeout(infos.classList.remove("start-consultingsample"))
+        infos.classList.remove("start-consultingsample", "start-consultingsample2")
     }
     
 }
 
 var menubar=document.getElementById("menu-bar");
 var menudetails=document.querySelector(".menudetails")
+
+
 function menubardetails(){
     if(menudetails.style.left==="-400px"){
         menudetails.style.left="1px";
@@ -81,7 +84,7 @@ var slider=document.querySelector('.slider-2')
 var sliderbtn1=document.querySelector(".sliderbtn1")
 var sliderbtn2=document.querySelector(".sliderbtn2")
 var sliderbtn3=document.querySelector(".sliderbtn3")
-const sliderinterval=setInterval(imageslider,2000);
+const sliderinterval=setInterval(imageslider,4000);
 
 function imageslider(){
 
@@ -231,7 +234,6 @@ function dropdownfourth(){
     early1.classList.remove("core");
 }
 
-
 var scroller=document.querySelector(".scroller")
 
 function scro(){
@@ -356,7 +358,6 @@ function nextbtn(){
 function previewbtn(){
     workers.scrollLeft-="1350";
 }
-
 document.querySelector(".sticky-arrow").addEventListener("click",function(){
     document.querySelector("html").scrollTo(0,0);
     document.querySelector("html").style.scrollBehavior="smooth";

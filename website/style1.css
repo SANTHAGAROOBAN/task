@@ -980,7 +980,6 @@ sup{
 }
 .core-feature-div h1{
     font-size: 55px;
-
 }
 .early h3,.integrity h3,.solution h3,.innovation h3{
     width: 200px;
@@ -994,23 +993,21 @@ sup{
     position: relative;
     z-index: 1;
     cursor: pointer;
-    /* transition: 1s; */
 }
-.core h3{
-    background-color: yellow;
-}
+
 .core h3::before{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    background:black;
+    background: black;
     width: 10%;
     height: 100%;
     z-index: 0;
     transform: skewX(-40deg);
+
 }
- .core h3::after{
+.core h3::after{
     content: "";
     position: absolute;
     top: 0;
@@ -1020,19 +1017,7 @@ sup{
     height: 100%;
     z-index: -1;
     transform: skewX(-40deg);
-    animation: slid 2s linear ease-in-out;
 }
-@keyframes slid {
-    from{
-        right: -290px;
-        transform: translateX(0px) skewX(-40deg);   
-    }
-    to{
-        right: -270px;
-        transform: translateX(-10px) skewX(-40deg);
-        
-    }
-} 
 
 .coreinside{
     width: 80%;
