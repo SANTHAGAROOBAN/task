@@ -1,0 +1,8 @@
+table,tr,td{
+    border: solid 2px black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    width: 500px;
+    height: 20px;
+}
