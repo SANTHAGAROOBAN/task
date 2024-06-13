@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMVALIDATION</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1 style="margin-bottom: 10px;">Form</h1>
+        <div class="part">
+            <input type="text" id="username" placeholder="Username">
+            <div class="error"></div>
+        </div>
+        <div class="part">
+            <input type="text" pattern="(0[1-9]|1[0-2])/([0-2][0-9]|3[01])/([0-9]{4})" id="dob" placeholder="mm/dd/yyyy" >
+            <div class="error"></div>
+        </div>
+        <div class="part">
+            <select id="sex_select">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="part">
+            <input type="number" id="mobilenumber"  placeholder="mobilenumber">
+            <div class="error"></div>
+        </div>
+        <div class="btn">
+            <button >Submit</button>
+            <button class="Reset">Reset</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
