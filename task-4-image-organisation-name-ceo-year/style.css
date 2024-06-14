@@ -1,0 +1,12 @@
+img{
+    width: 120px;
+    height: 200px;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+
+.details{
+    visibility: hidden;
+}
