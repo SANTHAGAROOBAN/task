@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+    position: relative;
+}
+.img{
+    position: absolute;
+}
+
+button{
+    margin-top: 300px;
+    transform: translateX(550px);
+    padding: 8px;
+}
