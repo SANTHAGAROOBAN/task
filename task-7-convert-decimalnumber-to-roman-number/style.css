@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+}
+.numberinput{
+    width: 300px;
+    margin-left: 27%;
+    padding: 20px;
+}
+.decimalinput{
+    width: 300px;
+    
+    padding: 20px;
+}
+.numberinput{
+    text-align: center;
+    background-color: gainsboro;
+}
+.decimalinput{
+    text-align: center;
+    background-color: bisque;
+}
+
+#resultone,#resulttwo{
+    padding: 5px;
+    margin-top: 20px;
+}
+#number,#decimal{
+    padding: 5px;
+}
+button{
+    padding: 5px;
+    margin-top: 20px;
+}
+/* .decimalinput{
+    background-color: green;
+   
+} */
+ h2{
+    text-align: center;
+ }
