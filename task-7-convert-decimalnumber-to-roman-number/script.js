@@ -8,11 +8,6 @@ var hundreds=["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"];
 // var thousands=["","M","MM","MMM","MMMM","MMMMM","MMMMMM","MMMMMMM","MMMMMMMM","MMMMMMMMM"];
 // var tenth=["","X̅"];
 
-var onesnum=[0,1,2,3,4,5,6,7,8,9];
-var tensnum=[0,10,20,30,40,50,60,70,80,90];
-var hundredsnum=[0,100,200,300,400,500,600,700,800,900];
-
-
 
 Cnumber.addEventListener("click",()=>{
     numbertoroman();
