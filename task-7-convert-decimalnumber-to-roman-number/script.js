@@ -48,20 +48,7 @@ function numbertoroman(h){
             resultone.value+="M";
         }
     }
-   
-    // if(h.length>3){
-    //     var th=h[(numberval.length)-4];
-    //     console.log("thouseds"+th);
-    //     console.log("ththth"+thousands[th]);
-    //     resultone.value+=thousands[th];
-    //     // if(th>5){
-    //     //     tsh=th/1000;
-    //     //     console.log("thousand greater"+th*tsh);
-    //     // }
-        
-    //     // th=h/1000;
-    //     // console.log("ths"+th);
-    // }
+
     if(h.length>2){
         var hu=h[(numberval.length)-3];
         console.log("hundreds"+hu);
