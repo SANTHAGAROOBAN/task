@@ -1,0 +1,83 @@
+body{
+    color: white;
+    background: url(./source/6077811.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.snakegameboard{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template: repeat(40,1fr)/repeat(40,1fr);
+    background-color: white;
+    border: solid black 5px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1350px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./source/6077811.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+}
+h2{
+    color: rgb(2, 78, 116);
+    -webkit-text-stroke:white 0.5px;
+    text-transform: uppercase;
+    
+}
+h3{
+    color: white;
+}
+h1{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    padding: 10px;
+}
+button{
+    padding: 10px;
+}
+.details{
+    display: flex;
+    gap: 70px;
+    
+}
+.snake{
+    background-color: blue;
+}
+.food{
+    background-color: red;
+    border-radius: 20px;
+}
+#yellowfood{
+    background-color: yellow;
+    border-radius: 20px;
+}
+#green{
+    background-color: green;
+    border-radius: 20px;
+}
+#yellowfoods{
+    background-color:yellow;
+    border-radius: 20px;
+}
