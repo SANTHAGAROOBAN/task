@@ -150,12 +150,11 @@ var one;
 
 
 function XandY(){
-   
-    specialpowerX=plusval;
-    specialpowerY=Math.abs(foodY-20);
     if(specialpowerY<1){
         specialpowerY=0;
     } 
+    specialpowerX=plusval;
+    specialpowerY=Math.abs(foodY-20);
     setTimeout(cXandY,20000);
 }
 
@@ -171,6 +170,7 @@ function randompowerval(){
 }
 setInterval(randompowerval,10000);
 
+// randompower=2;
 
 function gamestart(){
     if(info){
@@ -294,13 +294,13 @@ function game(){
     }
 
 
-    if(condi){
-       score=score+10;
+    if(condi){ 
         for(let i=1;i<41;i++){
             for(let j=1;j<41;j++){
                 snake+=`<div class="food" id="yellowfood" style='grid-area:${i}/${j};'></div>`;
             }
-        }     
+        }   
+        score=score+10;  
     }
     
 
@@ -384,6 +384,7 @@ function destroyslowsnake(){
 }
 function yelloweverywhere(){
     condi=1;
+    
     powerdisplay.textContent="yellowfruit for entire screen for 30sec";
     setTimeout(destroyyellow,10000);
 }
@@ -402,9 +403,11 @@ function destroyinvisibility(){
     powerdisplay.textContent=" ";
 }
 
-
+var decreasel;;
 function decreaselength(){
-        for(let i=1;i<snakebody.length-3;i++){
+    decreasel=snakebody.length-(100/20);
+    console.log("dec"+decreasel);
+        for(let i=1;i<decreasel;i++){
             snakebody.pop();
             console.log("snakebody"+ snakebody[i])
             console.log("hello for is working")
@@ -442,122 +445,3 @@ game();
 createfood();
 const moveinterval=setInterval(gamestart,intervaltime);
 document.addEventListener("keydown",changesnakedirection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
