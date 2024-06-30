@@ -168,7 +168,7 @@ function randompowerval(){
     randompower=Math.floor(Math.random()*4)+1;
     console.log(randompower);
 }
-setInterval(randompowerval,10000);
+setInterval(randompowerval,30000);
 
 // randompower=2;
 
