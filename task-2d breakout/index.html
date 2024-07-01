@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Breakout-Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="mainmenu">
+            <h1>Mainmenu</h1>
+            <a href="#" id="start">Start</a>
+            <a href="#" id="setting">Setting</a>
+            <!-- <a href="#" id="highscore">HighScore</a> -->
+            <a href="C:\Users\S A N T H\Desktop\Task_\task-01\task-2d breakout\createdetails.html">Create Details</a>
+        </div>
+        <div class="settinginfo">
+            <div class="overlay">
+                <center>
+                <form>
+                <input type="radio" name="santh" id="keyboardcontrol" checked> <div>KEYBOARD</div>
+                <input type="radio" name="santh" id="mousecontrol" > <div>MOUSECONTROL</div>
+                </form>
+                <button id="btn">checked</button>
+
+               </center>
+            </div>
+        </div>
+        <div id="loginform">
+            <form class="form">
+                <h1>ENTER NAME</h1>
+                <input type="text" placeholder="Enter your Name" id="name">
+                <div>
+                    <button id="playbtn">Play</button>
+                    <button id="cancelbtn">cancel</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="gameboardcontainer">
+            <div id="header">
+                <h3>Name:<span class="playername"></span></h3>
+                <h3>lives:<span class="lives">3</span></h3>
+                <h3>timer:<span class="min">0</span>: <span class="sec">0</span></h3>
+
+                <h3>Level:<span class="level">1</span></h3>
+                <h3>Score:<span class="score">0</span></h3>
+            </div>
+            <div class="gameboard">
+            </div>
+            <div class="ballctrl">
+            </div>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
