@@ -457,7 +457,7 @@ function createcontrolpad(){
 }
 createcontrolpad();
 
-var m=0;
+var m=1;
 var ss=0;
 var secs;
 var mins;
@@ -470,8 +470,8 @@ function timerFunction(){
     secs=ss++;
     if(ss>=60){
         mins=m++;
-        ss=0;
         min.textContent=mins;
+        ss=0;
     }
     sec.textContent=secs;
 
