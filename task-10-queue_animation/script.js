@@ -74,6 +74,18 @@ function draw(){
     context.closePath();
 
     context.beginPath();
+    context.arc(people4.x,people4.y,people3.width,0,Math.PI*2);
+    context.fillStyle="gray";
+    context.fill();
+    context.closePath();
+
+    context.beginPath();
+    context.arc(people5.x,people5.y,people3.width,0,Math.PI*2);
+    context.fillStyle="gray";
+    context.fill();
+    context.closePath();
+
+    context.beginPath();
     context.arc(peopler1.x,peopler1.y,peopler1.width,0,Math.PI*2);
     context.fillStyle="gray";
     context.fill();
@@ -219,6 +231,18 @@ var people3={
     width:rpwidth
 }
 
+var people4={
+    x:rpx,
+    y:rpy-110,
+    width:rpwidth
+}
+
+var people5={
+    x:rpx,
+    y:rpy-110,
+    width:rpwidth
+}
+
 
 var lpx=250;
 var lpy=95;
@@ -246,47 +270,102 @@ var hero={
     y:lpy-75,
     width:rpwidth
 }
-
+var val;
 function drawpeoplemove(){
+    val=true;
 
-
-
-
+if(val)
+{
     hero.x += -1;
-    if(hero.x<=35){
+}
+else{
+    hero.x += 1;
+}
+   
+    if(hero.x<=35 && !(peopler3.y==73)){
         hero.x=35;
         peopler1.y += 1;
+        // console.log(peopler1.y+"hellow");
+        
     }
     
-    // people1.y += 1;
+    if(peopler1.y>=98){
+        peopler1.y=98;
+        if(peopler1.y==98){
+            peopler1.x+=1;
+            // console.log(peopler1.x+"hellow")
+            if(peopler1.x>=320){
+                peopler1.x=320;
+            }
+        }
+    }
+
+    if(peopler1.x==320){
+        peopler2.y+=1;
+
+        if(peopler2.y>=98){
+            peopler2.y=98;
+            peopler3.y=73;
+            
+        }
+
+        
+    }
+    if(peopler3.y==73){
+        val=false;
+        // hero.x=36;
+        // hero.x += 1;
+        hero.x = 140;
+        // if(hero.x>=)
+        // console.log(hero.x+"ok")
+    }
+    if(hero.x==140){
+
+        people1.y += 1;
+    }
     // console.log(people1.y+"yep")
 
 
-    // if(people1.y >= 98){
-    //     people1.y=98;
-    //     people1.x += -1;
+    if(people1.y >= 98){
+        people1.y=98;
+        people1.x += -1;
 
-    //     if(people1.x<=-1){
-    //         people1.x=-10;
-    //     }
+        if(people1.x<=-1){
+            people1.x=-10;
+        }
 
-    // }
+    }
 
-    // if(people1.x == -10){
-    //     people2.y += 1
-    //     if(people2.y>=98){
-    //         people2.y=98;
+    if(people1.x == -10){
+        people2.y += 1
+        if(people2.y>=98){
+            people2.y=98;
             
-    //         people2.x += -1;
+            if(people2.y==98){
+                people3.y=73;
+                people4.y += 1;
+                if(people4.y>45){
+                    people4.y=45;
+                }
+            }
+        }
+    }
+    if(people4.y==45){
+        hero.x = 250;
+        hero.y=45;
 
-    //         if(people2.x<=-1){
-    //             people2.x= -10
-    //         }
-    //     }
-    // }
+        if(hero.y==45){
+            people2.x += -1;
+
+            if(people2.x< -10){
+                people2.x = -10;
+                people3.y = 95;
+                people4.y = 73
+            } 
+        }
+    }
 
    
-
 }
 
 
