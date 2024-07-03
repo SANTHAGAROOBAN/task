@@ -18,6 +18,12 @@ var checker2={
     width:cwidth
 }
 
+var checker3={
+    x:160,
+    y:-10,
+    width:cwidth
+}
+
 
 window.onload=function myfunction(){
     canvas=document.getElementById("canvas");
@@ -34,14 +40,15 @@ function update(){
     draw();
     drawtable();
     drawpeoplemove()
-    // firstcheckergone()
-    // firstcheckerin()
-    // secondcheckergone();
-
-    
 }
 
 function draw(){
+    context.beginPath();
+    context.arc(checker3.x,checker3.y,checker3.width,0,Math.PI*2);
+    context.fillStyle="blue";
+    context.fill();
+    context.closePath();
+
     context.beginPath();
     context.arc(checker1.x,checker1.y,checker1.width,0,Math.PI*2);
     context.fillStyle="blue";
@@ -110,42 +117,42 @@ function draw(){
     context.closePath();
 }
 
-// function firstcheckergone(){
-//     // requestAnimationFrame(update);
-//     context.clearRect(0,0,400,400);
-
-//     checker1.x += 1;
-//     if(checker1.x>=130 && !(checker1.x ==135) ){
-//         dooropen=true;
-//         checker1.x=135;
+function firstcheckergone(){
+    checker1.x += 1;
+    if(checker1.x>=130 && !(checker1.x ==135) ){
+        dooropen=true;
+        checker1.x=135;
+        checker3.x=160;
         
-//         checker1.y+= -1;
-//         console.log("checker1.y:"+checker1.y)
+        checker1.y+= -1;
+        checker3.y -= 1;
+        // console.log("checker1.y:"+checker1.y)
 
-//         if(checker1.y<=-1){
-//             // checker1.y=-5;
-//             // console.log("hello");
-//             checker1.y = -10
+        if(checker1.y<=-1){
+            // checker1.y=-5;
+            // console.log("hello");
+            checker1.y = -10
             
-//         }
+        }
         
-//     }
+    }
 
-//     if(checker1.x == 135 && checker1.y<=80){
-//        dooropen=false;
-//     }
+    if(checker1.x == 135 && checker1.y<=80){
+        
+       dooropen=false;
+    }
       
-// }
-
+}
+var a=-1;
 
 function secondcheckergone(){
-    checker2.x += -1;
+    checker2.x += a;
     if(checker2.x<=180 && !(checker2.x ==160) ){
         dooropen=true;
         checker2.x=160;
         
-        checker2.y+= -1;
-        console.log("checker1.y:"+checker2.y)
+        checker2.y+= a;
+        // console.log("checker2.y:"+checker2.y)
 
         if(checker2.y<=-1){
             checker2.y = -10
@@ -161,17 +168,7 @@ function secondcheckergone(){
       
 }
 
-function firstcheckerin(){
-    if(checker1.y <= -1 && checker1.x==135){
-        checker1.y += 1;
 
-    }
-    
-    // if(checker1.x==135 && checker1.y>129){
-    //     checker1.x = 32 ;
-    // }
-
-}
 
 
 
@@ -270,18 +267,15 @@ var hero={
     y:lpy-75,
     width:rpwidth
 }
-var val;
+var val=true;
 function drawpeoplemove(){
-    val=true;
+    
 
 if(val)
 {
     hero.x += -1;
 }
-else{
-    hero.x += 1;
-}
-   
+
     if(hero.x<=35 && !(peopler3.y==73)){
         hero.x=35;
         peopler1.y += 1;
@@ -365,9 +359,92 @@ else{
         }
     }
 
+    if(people4.y==73){
+        if(b==1){
+            secondcheckergone();
+            console.log("inside"+b)
+        }
+       if(checker2.y <= -10){
+            hero.x = 62; 
+        }
+        if(hero.x==62){
+            hero.y = 95;
+        }
+      
+        
+    }
+
+    if(checker1.x==32 && checker1.y==130 && hero.y==95){
+        b=0;
+        checker3.y += 1;
+        // console.log("outside"+b);
+        // console.log(checker2.y+"checker2.y");
+        // console.log(checker2.x+"checker2.x");
+        dooropen=true;
+        if(checker3.y >= 130){
+            checker3.y=130;
+            if(checker3.y==130){
+                dooropen=false
+                checker3.x += 1;
+                if(checker3.x >=250){
+                    checker3.x = 250;
+                }
+            }
+        }
+        
+       if(checker3.x==250){
+         people3.x += -1;
+         if(people3.x <= -10){
+            people3.x= -10;
+            people4.y= 95;
+         }
+       }
    
+    }
+
+    if(people4.y==95){
+        peopler2.x += +1;
+
+        if(peopler2.x>=350){
+            peopler2.x=350;
+        }
+
+        if(peopler2.x==350){
+            peopler3.y=95;
+        }
+    }
+    
+    if(peopler3.y==95){
+        hero.x = 130;
+    }
+
+   if(hero.x==130){
+    people4.x += -1;
+    if(people4.x<= -10){
+        people4.x = -10;
+        hero.x = 90;
+    }
+   }
+
+   if(hero.x==90){
+    peopler3.x += 1;
+    if(peopler3.x>=350){
+        peopler3.x=350;
+    }
+   }
+
+
+
+   if(peopler3.x==350){
+
+    
+
+
+    firstcheckergone();
+    
+   }
 }
 
 
-
+var b=1;
 
