@@ -24,12 +24,11 @@ document.onscroll= ()=>{
     if(scrollY>70){
         signup.style.backgroundColor="red";
         sign.style.color="white";
-        col=1;
     }
     else{
         signup.style.backgroundColor="transparent";
         sign.style.color="red";
-        col=0;
+        
     }
     console.log(window.scrollY+"scrolled");
 

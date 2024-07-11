@@ -25,7 +25,7 @@ body{
     border-bottom: 1px solid rgb(224, 216, 216);
     /* box-shadow: 2px 2px 6px 0.5px rgb(146, 140, 140); */
     height: 70px;
-    /* width: 1280px; */
+    width: 1350px;
     box-sizing: content-box;
     position: fixed;
     top: 0;
@@ -46,10 +46,9 @@ nav>ul>li{
     margin-left: 20px;
 }
 .navsec2{
-    float: end;
-    margin-left: 200px;
-    padding-left: 80px;
-    /* margin-right: 40px; */
+    display: flex;
+justify-content: right;
+    margin-left: 240px;
 }
 .nav-ul{
     display: flex;
@@ -221,7 +220,7 @@ li:hover{
     width: 10px;
     height: 10px;
     right: -3px;
-    top: -2px;
+    top: -1px;
     border-radius: 50%;
     border: solid red 2px;
     animation: wave 1s infinite ease-in-out;
@@ -248,9 +247,10 @@ li:hover{
 
     }
     100%{
+        /* border: solid red 1px; */
+
         transform: scale(2.5);
         opacity: 0.1;
-
     }
 }
 #search{
@@ -826,11 +826,298 @@ li:hover .effect,li:hover .effect1{
 }
 .hh{
     margin-top: 20px;
+    
 }
 .watch-video{
     text-decoration: none;
     color: blue;
     border:solid blue 1px;
-    padding: 15px 30px 15px 25px;
+    padding: 15px 30px 15px 35px;
+    position: relative;
     /* margin-top: 20px; */
+}
+.video-symbol{
+    transform: scale(1);
+    transition: 0.5s;
+    color: red;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    
+}
+.watch-video:hover .video-symbol{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.banner-zoho-section{
+position: relative;
+
+}
+.zoho-banner{
+    background: url(./source/banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 510px;
+}
+.the-core-value{
+    background-color: white;
+    width: 1200px;
+    height: 800px;
+    position: relative;
+    border: solid 1px rgb(228, 217, 217);
+    z-index: 2;
+    top: -220px;
+    left: 80px;
+}
+.the-core-value .core{
+    width: 450px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-left: 350px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.card{
+    width: 295px;
+}
+.card img{
+    width: 70px;
+    height: 70px;
+}
+.card h4{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.btn6{
+    padding: 20px;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 40px;
+    text-align: center;
+}
+.btn6 a{
+    text-decoration: none;
+    padding: 15px 30px 15px 25px;
+    color: white;
+    transition: 0.5s;
+    background-color: blue;
+   
+}
+.ari{
+    position: absolute;
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+.read-our:hover .ari{ 
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+.forbes{
+    display: flex;
+}
+.forbes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 630px;
+    height: 420px;
+    margin-left: 180px;
+}
+.forbesicon{
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.forbes-container .h1-c{
+    font-size: 30px;
+    
+}
+.forbes-container .h1-c h1{
+    font-weight: 400;
+}
+.forbes-container p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+.btn7{
+    position: relative;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+.more-on{
+    text-decoration: none;
+    padding: 15px 30px 15px 25px;
+    color: blue;
+    transition: 0.5s;
+    border: solid blue 1px;
+}
+.ari1{
+    position: absolute;
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+.more-on:hover .ari1{ 
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+.section-final{
+    margin-top: 80px;
+    width: 1350px;
+    height: 750px;
+    border-top: solid 1px rgb(226, 223, 223);
+}
+
+.final-top{
+    text-align: center;
+    margin-top:100px;
+}
+.final-top h1{
+    font-size: 44px;
+    font-weight: 300;
+}
+.final-top h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.btn8{
+    position: relative;
+    transition: 0.5s;
+    margin-top: 40px;
+    
+}
+.sinn{
+    text-decoration: none;
+    padding: 15px 30px 15px 25px;
+    color: white;
+    transition: 0.5s;
+    background-color: red;
+}
+.rarr {
+    position: absolute;
+    transition: 0.5s;
+
+    transform: translateX(5px);
+}
+.sinn:hover .rarr{
+    transition: 0.5s;
+    transform: translateX(10px);
+}
+.final-center{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.final-rows{
+    display: flex;
+    /* width: 250px; */
+    flex-direction: column;
+}
+.final-rows h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.final-rows a{
+    text-decoration: none;
+    color: black;
+}
+.final-rows a:hover{
+    color: rgb(4, 4, 180);
+}
+.final-rows ul li{
+    margin-top: 10px;
+}
+
+.final-rows ul li a{
+    letter-spacing: -0.2px;
+}
+
+.z{
+    text-decoration: underline;
+}
+.z:hover{
+    color: blue;
+}
+.f{
+    margin-top: 10px;
+    position: relative;
+    transition: 0.5s;
+
+}
+.f a{
+    color: blue;
+}
+.b{
+    position: absolute;
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+.f a:hover{
+    color: blue;
+}
+.f a:hover .b{
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+.social-media{
+ text-align: center;  
+ margin-top: 30px; 
+}
+.social-media img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.contact-us {
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-us a{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left:10px;
+    font-size:small;
+    color: black;
+}
+.contact-us a:hover{
+    color: blue;
+}
+.contact-us :nth-child(2){
+    margin-top: 5px;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #0b0d1f;
+    text-align: center;
+    align-content:center ;
+}
+footer img{
+    width: 100px;
+    height: 50px;
+}
+.footer-c{
+    color: white;
 }
