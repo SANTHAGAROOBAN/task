@@ -203,14 +203,15 @@ li:hover{
 .inputdiv{
     position: absolute;
     background-color: white;
-    box-shadow: 2px 2px 6px 0.5px rgb(146, 140, 140);
-
+    /* box-shadow: 2px 2px 6px 0.5px rgb(146, 140, 140); */
+z-index: -1;
     height: 70px;
     visibility: hidden;
-    margin-top: 24px;
+    margin-top: 27px;
     left: 0;
     width: 1400px;
     padding: 10px;
+    border-bottom: 1px solid gainsboro;
     /* transition: 1s; */
 }
 .glowdot{
@@ -239,8 +240,6 @@ li:hover{
     25%{
         transform: scale(1);
         opacity: 0.7;
-
-
     }
     50%{
         transform: scale(1.5);
@@ -259,6 +258,15 @@ li:hover{
         opacity: 0.1;
     }
 }
+/* .announcedata{
+    position: absolute;
+    left: -700px;
+    top: 30px;
+    width: 1350px;
+    height: 550px;
+    background-color: black;
+} */
+
 #search{
     width: 1000px;
     margin-left: 130px;
@@ -419,24 +427,34 @@ li label{
     transition: 0.5s;
     /* background-color: white; */
 }
-
+.language img{
+    width: 20px;
+    height: 20px;
+}
 .effect{
     position: absolute;
     top: 10px;
     left: -20px;
     transition: 0.5s;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-right: 1px solid blue;
     border-top: 1px solid blue; 
     transform: rotate(45deg);
+}
+.anouncement{
+    position: relative;
+}
+.language-1 div,.language-2 div{
+    display: flex;
+    gap: 10px;
 }
 .effect1{
     position: absolute;
     top: 10px;
     left: 15px;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     transition: 0.5s;
     border-right: 1px solid black;
     border-top: 1px solid black; 
@@ -1139,6 +1157,7 @@ footer img{
     width: 450px;
     transition: 0.2s;
     height: 350px;
+    
     background-color: white;
     border: solid 1px gainsboro;
     z-index: 3;
