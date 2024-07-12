@@ -3,8 +3,8 @@ var dropdownlist=document.querySelector('.dropdownlist')
 var dropdownlistspan=document.querySelector(".company .fa-angle-down")
 company.addEventListener("click",()=>{
     dropdownlist.classList.toggle("active")
-    // dropdownlist.classList.remove("active")
-   dropdownlistspan.classList.toggle("ef")
+    dropdownlistspan.classList.toggle("ef")
+    company.classList.toggle("color")
 });
 
 
@@ -122,3 +122,17 @@ function incred(){
         dincre=55;
     }
 }
+var threedot=document.querySelector(".threedots")
+threedot.addEventListener("mouseenter",()=>{
+    dropdownlist.classList.remove("active");
+    dropdownlistspan.classList.remove("ef")
+    company.classList.remove("color")
+    selectcontainer.classList.remove("sactive")
+
+})
+
+var language=document.querySelector(".language");
+var selectcontainer=document.querySelector(".select-container")
+language.addEventListener("click",()=>{
+    selectcontainer.classList.toggle("sactive")
+})
