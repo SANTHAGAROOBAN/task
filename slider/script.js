@@ -98,3 +98,32 @@ for(let i=0; i<span.length;i++){
         changedotclr()
     })
 }
+
+
+var label=document.getElementById('label-1');
+var checkBox=document.getElementById("toggle-btn");
+var container=document.querySelector('.container1');
+
+checkBox.onclick= ()=>{
+    if(checkBox.checked==true){
+        container.classList.add('lab');
+        document.body.style.backgroundColor="black";
+        document.body.style.color='white'
+       for(let i=0;i<span.length;i++){
+        span[i].style.border="solid 2px white"
+        }
+    document.querySelector(".mode").textContent="DARK MODE";
+
+    }
+    else{
+        container.classList.remove('lab');
+        document.body.style.backgroundColor="white";
+        document.body.style.color="black";
+        console.log("not able to work");
+        for(let i=0;i<span.length;i++){
+            span[i].style.border="solid 2px black"
+        }
+        document.querySelector(".mode").textContent="LIGHT MODE";
+        
+    }
+}
